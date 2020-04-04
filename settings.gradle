@@ -1,0 +1,2 @@
+rootProject.name='Color Converter'
+include ':app'
