@@ -1,18 +1,126 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/wide_background"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <TableLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_gravity="center_vertical|center_horizontal"
+        >
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal|center_vertical"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/select_color_code"
+                style="@style/HomeScreenTitleTheme"
+                />
+
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal|center_vertical"
+            >
+
+            <Button
+                android:id="@+id/hexButton"
+                android:layout_width="128dp"
+                android:layout_height="128dp"
+                android:background="@drawable/round_button_design"
+                android:text="@string/round_button_hex"
+                style="@style/RoundButtonTheme"
+                />
+
+            <Button
+                android:id="@+id/rgbButton"
+                android:layout_width="128dp"
+                android:layout_height="128dp"
+                android:background="@drawable/round_button_design"
+                android:text="@string/round_button_rgb"
+                style="@style/RoundButtonTheme"
+                />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal|center_vertical"
+            >
+
+            <Button
+                android:id="@+id/pmsButton"
+                android:layout_width="128dp"
+                android:layout_height="128dp"
+                android:background="@drawable/round_button_design"
+                android:text="@string/round_button_pms"
+                style="@style/RoundButtonTheme"
+                />
+
+            <Button
+                android:id="@+id/cmykButton"
+                android:layout_width="128dp"
+                android:layout_height="128dp"
+                android:background="@drawable/round_button_design"
+                android:text="@string/round_button_cmyk"
+                style="@style/RoundButtonTheme"
+                />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal|center_vertical"
+            >
+
+            <Button
+                android:id="@+id/hslButton"
+                android:layout_width="128dp"
+                android:layout_height="128dp"
+                android:background="@drawable/round_button_design"
+                android:text="@string/round_button_hsl"
+                style="@style/RoundButtonTheme"
+                />
+
+            <Button
+                android:id="@+id/ralButton"
+                android:layout_width="128dp"
+                android:layout_height="128dp"
+                android:background="@drawable/round_button_design"
+                android:text="@string/round_button_ral"
+                style="@style/RoundButtonTheme"
+                />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal|center_vertical"
+            >
+
+            <Button
+                android:id="@+id/sampleCodesButton"
+                android:layout_width="128dp"
+                android:layout_height="128dp"
+                android:background="@drawable/round_button_design"
+                android:text="@string/round_button_sample_codes"
+                style="@style/RoundButtonTheme"
+                />
+
+        </TableRow>
+    </TableLayout>
+
+</ScrollView>

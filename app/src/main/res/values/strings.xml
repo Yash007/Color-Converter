@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Color Converter</string>
+    <string name="round_button_hex">HEX</string>
+    <string name="round_button_rgb">RGB</string>
+    <string name="round_button_pms">PMS</string>
+    <string name="round_button_cmyk">CMYK</string>
+    <string name="round_button_hsl">HSL</string>
+    <string name="round_button_ral">RAL</string>
+    <string name="round_button_sample_codes">Sample\nCodes</string>
+    <string name="select_color_code">Select Color Code</string>
 </resources>
